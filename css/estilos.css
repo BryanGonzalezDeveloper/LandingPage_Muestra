@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    font-family:'Raleway', sans-serif;
+}
+.hero{
+    background-image: url('../images/header.jpg');
+    width: 100%;
+    height:55vmin ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right,#52c4df,#ad55c1);
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+.texto-hero{
+    display:flex;
+    height: 35vmin;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+.texto-hero h1{
+    font-size: 8vmin;
+}
+.texto-hero p{
+    font-size: 6vmin;
+    margin-bottom: 2vmin;
+}
+
+.texto-hero a{
+    line-height: 2.5vmin;
+    background-color: #8E75CE;
+    color: #fff;
+    padding: 1% ;
+    border-radius: 12%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.texto-hero a:hover{
+    opacity: 0.6;
+    transform: scale(1.10);
+}
+
+.svg-hero path{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
