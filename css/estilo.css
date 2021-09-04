@@ -1,0 +1,209 @@
+.contenedor,
+.wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 3% 0;
+}
+
+.contenedor{
+    padding: 3% 0 3% 0;
+}
+.titulo
+{
+    font-weight: bold;
+    font-size: 8vmin;
+    color: #1C4BB7 ;
+    text-align: center;
+}
+
+.titulo.left{
+    text-align: left;
+}
+
+.website{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.website img{
+    width: 45%;
+    user-select: none;
+}
+.website .contenedor-textos-main{
+    width: 45%;
+}
+.parrafo{
+    text-align: justify;
+    margin-bottom: 2%;
+}
+.cta{
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(71,207,151,1) 0%, rgba(23,163,236,1) 37%, rgba(207,32,209,1) 100%);
+    padding: 2vmin 2vmin;
+    font-weight: bold;
+    color: #000;
+    border-radius: 12px;
+}
+
+/*Info*/
+
+.info,footer{
+    background: linear-gradient(90deg, rgba(227,160,220,1) 0%, rgba(226,91,223,1) 37%, rgba(207,32,209,1) 100%);
+        color: #fff;
+}
+
+/*cards*/
+.content-cards{
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.card{
+    margin-bottom: 2%;
+    width: 30%;
+    text-align: center;
+    height: 200px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    transition:  transform 0.6s;
+   
+}
+.card:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.content-cards p{
+    margin-bottom: 10px;
+}
+
+.card i{
+    margin: 30px 0 20px 0;
+    color:#250FF4 ;
+}
+
+/*Galeria*/
+.galeria{
+    background: #f2f2f2;
+}
+
+.galeria img{
+    width: 250px;
+    height: 200px;
+    margin: 1%;
+    border: solid 2px #250FF4;
+    border-radius: 18px;
+    
+}
+.galeria article{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-last{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.info-last .last-section img{
+    width: 48%;
+}
+.info-last .last-section .contenedor-textos-main{
+    width: 40%;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: solid 1px #fff;
+    padding: 20px 10px;
+}
+.input::placeholder{
+    color: #fff;
+    font-family: 'raleway','serif';
+}
+
+input[type="text"],input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0 ;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #cf20d1;
+    font-weight: bold;
+}
+
+/*Responsive*/
+@media screen and (max-width:800px) {
+    .texto-hero h1{
+        font-size: 8vmin;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    .texto-hero p, .texto-hero a{
+        font-size: 5vmin;
+    }
+    .cta{
+        font-size: 11px;
+    }
+
+article.card{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+.galeria img{
+    width: 80%;
+    height: 120px;
+    margin-bottom: 15px;
+}
+.texto-hero  a{
+    font-size: 4vmin;
+}
+
+p{
+    font-size: 5vmin;
+}
+.card h3{
+    font-size: 16px;
+}
+.cards h2{
+    margin-bottom: 10px;
+}
+.card i{
+    margin: 15px 0 10px 0;
+}
+.card p, .card a{
+    color: #000;
+    font-size: 12px;
+}
+}

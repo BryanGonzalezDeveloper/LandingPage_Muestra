@@ -8,13 +8,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,200;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/estilos_header.css">
-<link rel="stylesheet" href="/css/estilos_generales.css">
+<link rel="stylesheet" href="/css/estilo.css">
     <title>Pagina de muestra</title>
   </head>
   <body>
     <header class="hero">
       <div class="texto-hero">
-        <h1>Bienvenido a "Nombre de la compañia"</h1>
+        <h1>Bienvenido a <i>BG DESIGN</i></h1>
         <p>Soluciones especializadas y hechas a la medida.</p>
         <a href="#contacto">Contactanos</a>
       </div>
@@ -32,76 +32,72 @@
         </svg>
       </div>
     </header>
-    <section class="wave contenedor website">
+    <section class="wave-contenedor website">
       <img
         src="/images/ilustracion1.svg"
         alt="Logotipo representativo de los servicios que ofrece la empresa"
       />
       <div class="contenedor-textos-main">
-        <h2 class="titulo left">Title of section</h2>
+        <h2 class="titulo left">¿Quienes somos?</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          eum repudiandae necessitatibus ex quaerat aperiam enim consectetur,
-          non at hic. Facilis quasi at adipisci vero.
+          Somos un equipo profesional dedicado al desarrollo web que te ayudara a impulsar tu negocio a través <br>de internet. Contamos con un equipo altamente especializado en satisfacer las necesidades del cliente. <br>Innovación y calidad nos distingue.
+
         </p>
         <a href="#" class="cta">Más información</a>
       </div>
     </section>
     <section class="info">
       <div class="contenedor">
-        <h2 class="titulo left">Haz crecer tu negocio</h2>
+        <h2 class="titulo left">Impulsa tú negocio</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-          maxime quos asperiores?
+          Segun estadisticas... El 65% de los negocios con presencia en internet reportar un aunmento de hasta 33% en sus ingresos anuales.  
         </p>
       </div>
     </section>
     <section class="contenedor cards">
       <h2 class="titulo">Nuestros servicios</h2>
-      <div class="content cards">
+      <div class="content-cards">
         <article class="card">
+          <h3>Soporte tecnico</h3>
           <i class="fal fa-phone-laptop"></i>
-          <h3>Title card</h3>
+          
           <i class="fas fa-desktop"></i>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-            accusamus.
+            Soporte y reparacion de equipo de computo con alta disponibilidad.
           </p>
           <a href="#" class="cta">Mas información</a>
         </article>
 
         <article class="card">
-          <h3>Title card</h3>
+          <h3>Gestión de proyectos</h3>
           <i class="fas fa-project-diagram"></i>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-            accusamus.
+            Creamos un plan de trabajo ideal y estrategico para incrementar tu alcance en el mercado.
           </p>
           <a href="#" class="cta">Mas información</a>
         </article>
 
         <article class="card">
-          <h3>Title card</h3>
+          <h3>Soluciones de computo en la nube</h3>
           <i class="fas fa-cloud-download-alt"></i>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-            accusamus.
+            ¿Necesitas mayor almacenamiento? ¿Deseas evitar la tediosa configuración en tu equipo de computo?<br>El computo en la nube es la solución. 
           </p>
           <a href="#" class="cta">Mas información</a>
         </article>
 
         <article class="card">
-          <h3>Title card</h3>
+          <h3>Modelado y desarrollo de base de datos</h3>
           <i class="fas fa-database"></i>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-            accusamus.
+            Diseñamos el modelo de base de datos que mejor se adapte a tus necesidades.
           </p>
           <a href="#" class="cta">Mas información</a>
         </article>
       </div>
     </section>
-    <section class="galeria">    
+    <section class="galeria contenedor">    
+       <div class="contenedor">
         <h2 class="titulo">Nuestro trabajo</h2>
         <article>
           <img src="/images/img1.jpg" alt="" />
@@ -111,37 +107,29 @@
           <img src="/images/img5.jpg" alt="" />
           <img src="/images/img6.jpg" alt="" />
         </article>
+       </div>
     </section>
 <section class="info-last">
     <div class="contenedor last-section">
-        <h2 class="titulo left">Title of section</h2>
+        <div class="contenedor-textos-main">
+          <h2 class="titulo left">Title of section</h2>
         <p class="parrafo">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </p>
         <a href="" class="cta">Más información</a>
+        </div>
+        <img src="/images/ilustracion2.svg" alt="">
     </div>
-    <img src="/images/ilustracion2.svg" alt="">
-    <div class="svg-wave" style="height: 150px; overflow: hidden">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          style="height: 100%; width: 100%"
-        >
-          <path
-            d="M-5.36,54.77 C273.42,150.48 367.10,-83.38 512.69,52.78 L513.26,155.42 L0.00,150.00 Z"
-            style="stroke: none; fill: #fff "
-          ></path>
-        </svg>
-      </div>
+    
 </section>
 
 <footer id="contacto">
     <div class="contenedor">
        <h2 class="titulo">Contactanos</h2>
        <form action="" class="form">
+        <input class="input"  type="text"  placeholder="Nombre">
          <input  class="input" type="email" placeholder="usuario@dominio.com">
          <textarea  class="input"  cols="30" rows="10" placeholder="Mensaje"></textarea>
-         <input class="input"  type="text"  placeholder="Nombre">
          <input  class="input" type="submit" value="Enviar">
        </form>
     </div>
